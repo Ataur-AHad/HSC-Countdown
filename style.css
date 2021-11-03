@@ -3,17 +3,28 @@
 *{
     box-sizing: border-box;
 }
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10%;
+}
+.picture{
+    flex-basis: 40%;
+    position: relative;
+    margin-right: 50px;
+}
+,clock{
+    flex-basis: 60%;
+    position: relative;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
+    
     align-items: center;
     justify-items: center;
     text-align: center;
-    overflow: hidden;
-    min-height: 100vh;
-    margin-top: 100px;
 }
 
 h1{
@@ -24,6 +35,8 @@ h1{
 .countdown{
     display: flex;
     transform: scale(2);
+    align-items: center;
+    justify-content: center;
 }
 
 .time{
@@ -62,7 +75,18 @@ h1{
                 -5px -5px 7px #ffffff;
 }
 
-@media(max-width:500px){
+@media only screen and (max-width:700px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    .clock{
+        flex-basis: 100%;
+    }
+    .picture{
+        flex-basis: 100%;
+    }
 
     h1{
         font-size: 40px;
