@@ -40,28 +40,6 @@ h1{
     margin: 0 0 5px;
 }
 
-.button-2{
-    text-align: center;
-    cursor: pointer;
-    margin: auto;
-    width: 150px;
-    border: none;
-    background: linear-gradient(to right, dodgerblue, royalblue);
-    border-radius: 5px;
-    height: 35px;
-    padding: auto;
-    color: white;
-    align-items: center;
-    transition: .2s;
-    margin-bottom: 60px;
-    margin-top: 80px;
-
-}
-.button-2:hover{
-    box-shadow: 5px 5px 7px #cbced1,
-                -5px -5px 7px #ffffff;
-}
-
 @media(max-width:500px){
 
     h1{
